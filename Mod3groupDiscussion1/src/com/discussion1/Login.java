@@ -1,17 +1,32 @@
 package com.discussion1;
 import java.util.HashMap;
 public class Login {
+    //Original code
+    // static boolean allowLogin(String user, String pwd){
+    //     boolean loggedIn = true;
+    //     try{
+    //         String realPwd = getRealPwdFromDb(user);
+    //         if(!pwd.equals(realPwd)){
+    //             loggedIn = false;
+    //         }
+    //     }catch(Exception e){
+    //         System.out.println("This cannot happen, ignore...");
+            
+    //     }
+    //     return loggedIn;
+    // }
+    
+    // Fixed code
     static boolean allowLogin(String user, String pwd){
-        boolean loggedIn=true;
-        try{
+        boolean loggedIn = false;
+        try{            
             String realPwd = getRealPwdFromDb(user);
-            if(!pwd.equals(realPwd)){
-                loggedIn = false;
-            }
-        }catch(Exception e){
-            System.out.println("This cannot happen, ignore...");
-            throw new IllegalArgumentException();
-        }
+            if(pwd.equals(realPwd)){
+                loggedIn = true;
+            }                       
+        }catch(NullPointerException e){
+            System.out.println("Null pointer handled");  
+        } 
         return loggedIn;
     }
     static String getRealPwdFromDb(String user){
@@ -25,8 +40,9 @@ public class Login {
     }
     public static void main(String[] args) {
         // String pwd = "badData";
-        String pwd = getRealPwdFromDb("user1");
-        if(allowLogin("user1", pwd)){
+        // String pwd = getRealPwdFromDb("user1");
+        String pwd = null;
+        if(allowLogin(null, pwd)){
             System.out.println("Login successful");
         }else{
             System.out.println("Login failed");
