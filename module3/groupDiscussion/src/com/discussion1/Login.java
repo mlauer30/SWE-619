@@ -42,7 +42,7 @@ public class Login {
         // String pwd = "badData";
         // String pwd = getRealPwdFromDb("user1");
         String pwd = null;
-        if(allowLogin(null, pwd)){
+        if(allowLogin("user1", pwd)){
             System.out.println("Login successful");
         }else{
             System.out.println("Login failed");
