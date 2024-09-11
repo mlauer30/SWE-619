@@ -11,7 +11,7 @@ package com.module2;
   @param rate:       Annual interest rate  (8% rate expressed as rate = 0.08) 
   @param payment:    Amount of the monthly payment 
 */ 
-public class Module2GroupAssignmentContract {
+public class Module2GroupAssignmentContract {   
     public static int months (int principal, double rate, int payment){
         // Requires: principal, rate, and payment all positive and payment is sufficiently large to drive the principal to zero. 
         // Effects:  return the number of months required to pay off the principal 
@@ -19,6 +19,12 @@ public class Module2GroupAssignmentContract {
         double monthlyInterestRate = rate/12.0;
         double oldPrincipal = (double) principal;
         double newPrincipal;
+
+        /**************************************************************************** */
+        if(principal < 0 || rate < 0 || payment < 0) {
+            throw new IllegalArgumentException("Principal, rate and payment must be positive");
+        }
+        /**************************************************************************** */
         if (payment <= 0) {
             throw new IllegalArgumentException("Payment must be a positive integer");
         }

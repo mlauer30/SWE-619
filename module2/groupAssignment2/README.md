@@ -1,18 +1,24 @@
-## Getting Started
+## TA Feedback
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Where is implementation of partial contract?
 
-## Folder Structure
+check for principal < 0, rate < 0 not found;
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+P.S. test code in unnecessary
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+principalDouble * (1 payment) >= principal
 
-## Dependency Management
+---
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Office Hours
+
+Include this check to satisfy the requires clause
+
+```
+if(principal < 0 || rate < 0 || payment < 0) {
+	throw new IllegalArgumentException("Principal, rate and payment must be positive");
+}
+```
+
