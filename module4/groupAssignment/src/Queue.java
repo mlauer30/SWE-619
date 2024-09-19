@@ -23,9 +23,10 @@ public class Queue<E>  {
   public static void main(String[] args) {
      // Simple exercise to enQueue/deQueue cmd line args
      // Usage:  java Queue item1 item2 item3 ...
+     String [] strings = {"item1", "item2", "item3"};
      Queue<String>  q = new Queue<> ();
-     for (String arg : args)
-        q.enQueue(arg);
+     for (String string : strings)
+        q.enQueue(string);
      while (!q.isEmpty() )
         System.out.println(q.deQueue());
   }
