@@ -2,7 +2,7 @@ package module5.groupAssignment;
 
 import java.util.*;
 
-public class Stack {
+public class StackBuggy {
 
   private Object[] elements;
   private int size = 0;
@@ -33,7 +33,7 @@ public class Stack {
     //"Stack:['NYC','DC','LA']"
     String output = "Stack:[";
     for (Object el : elements) {
-      output += "'" + el + "',";
+      output += "'" + el.toString() + "',";
     }
     output =
       elements.length > 0
@@ -43,7 +43,7 @@ public class Stack {
   }
 
   // Effects: creates an empty stack
-  public Stack() {
+  public StackBuggy() {
     this.elements = new Object[0];
   }
 
@@ -60,7 +60,10 @@ public class Stack {
   //	       i.e., this becomes this - [e]
   //          throws EmptyStackException if this stack is empty
   public Object pop() {
-    if (size <= 0) throw new EmptyStackException();
+    if (size <= 0) {
+      this.elements = null; // makes elements null, violating the rep-invariant
+      return null; 
+    }
     Object result = elements[--size];
     elements[size] = null;
     return result;
@@ -69,7 +72,7 @@ public class Stack {
   private void ensureCapacity() {
     if (elements.length == size) {
       Object oldElements[] = elements;
-      elements = new Object[2 * size + 1];
+      elements = new Object[2 * size + 1];    
       System.arraycopy(oldElements, 0, elements, 0, size);
     }
   }
