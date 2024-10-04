@@ -1,10 +1,10 @@
-
 import java.util.*;
+
 // Abstract Description:
 // A stack is a List that only allows insert/remove at right end.
 // SlimStack is stack that does not allow for identical elements to be adjacent to each other.
 // Note: duplicates are allowed, as long as they are not adjacent.
-public class SlimStack {
+public class SlimStackRI2 {
 
 	// AF(this) = a list built by copying the elements in "elements[0.. size-1]" while ignoring identical adjacent elements
 	//  		e.g, if elements is [5 8 8 8 4 6 6 6 6 5 5] a SlimStack would be [5 8 4 6 5]
@@ -18,9 +18,27 @@ public class SlimStack {
    
    private Object[] elements;
    private int size = 0;
+
+   
+    boolean repOkRI2() {
+        for (int i = 0; i < size; i++) {
+            if (elements[i] == null) {
+                return false;
+            }
+            if (i > 0 && elements[i].equals(elements[i-1])) {
+                return false;
+            }
+        }
+        return (
+        elements != null &&
+        elements.length >= 0 &&
+        size >= 0 &&
+        size <= elements.length
+        );
+    }
    
      
-   // Note: AF is the specification for toString()
+    // Note: AF is the specification for toString()
 	// Effects: returns a string representation of a list built by copying the elements in "elements[0.. size-1]" while ignoring identical adjacent elements
 	//  		e.g, if elements is [5 8 8 8 4 6 6 6 6 5 5] a SlimStack would be [5 8 4 6 5]
    public String toString() {
@@ -51,7 +69,7 @@ public class SlimStack {
 
 
    // Effects: creates an empty stack
-   public SlimStack() {
+   public SlimStackRI2() {
      this.elements = new Object[0];
    }
 

@@ -11,6 +11,13 @@ import java.util.EmptyStackException;
 import org.junit.*;
 import org.junit.runner.RunWith;
 
+
+// Participation Scores: 
+// Matthew Lauer - 100%
+// Sophia Nadasy - 100%
+// Dan Le - 100%
+// Sri Teja Kale - 100%
+// Sri Bhuvan Maddipudi - 100%
 public class StackTester {
 
   @Test

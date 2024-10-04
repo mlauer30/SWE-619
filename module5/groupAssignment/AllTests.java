@@ -3,6 +3,13 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import junit.framework.JUnit4TestAdapter;
 
+// Participation Scores: 
+// Matthew Lauer - 100%
+// Sophia Nadasy - 100%
+// Dan Le - 100%
+// Sri Teja Kale - 100%
+// Sri Bhuvan Maddipudi - 100%
+
 // This section declares all of the test classes in the program.
 @RunWith (Suite.class)
 @Suite.SuiteClasses ({StackTester.class, StackTesterBuggy.class}	)  // Add test classes here.
