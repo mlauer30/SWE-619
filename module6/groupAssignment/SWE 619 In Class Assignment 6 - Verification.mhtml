@@ -1,0 +1,168 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://mymasonportal.gmu.edu/bbcswebdav/pid-19813849-dt-content-rid-318847451_1/courses/B6202470/swe619.wiley.mastercourse_ImportedContent_20230512012310/Assignment6_verification.html
+Subject: SWE 619 In Class Assignment 6 - Verification
+Date: Thu, 3 Oct 2024 21:59:49 -0400
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--YbsF3lZ3cqoZ6ypivQACyHL37YzOc1lYM46sL6QCnG----"
+
+
+------MultipartBoundary--YbsF3lZ3cqoZ6ypivQACyHL37YzOc1lYM46sL6QCnG----
+Content-Type: text/html
+Content-ID: <frame-A26DC0908EFB823372D4A91931B7B57A@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://mymasonportal.gmu.edu/bbcswebdav/pid-19813849-dt-content-rid-318847451_1/courses/B6202470/swe619.wiley.mastercourse_ImportedContent_20230512012310/Assignment6_verification.html
+
+<!-- saved from url=3D(0055)https://cs.gmu.edu/~pammann/619/inClass/inClass=
+03B.html --><html><head><meta http-equiv=3D"Content-Type" content=3D"text/h=
+tml; charset=3DUTF-8">
+<title>SWE 619 In Class Assignment 6 - Verification</title>
+</head>
+<body>
+
+<center>
+ <h1>
+  SWE 619 In Class Assignment 6 - Verification <br>
+ </h1>
+</center>
+
+<hr>
+<font size=3D"+1">
+<p>
+Consider the provided class SlimStack.
+</p><ol>
+<li>
+Considering Rep-invariant1:
+</li>
+<ul>
+<li>
+Does <code>push()</code> maintain Rep-invariant1?
+</li><li>
+Does <code>push()</code> satisfy its contract?
+</li><li>
+Does <code>pop()</code> maintain Rep-invariant1?
+</li><li>
+Does <code>pop()</code> satisfy its contract?
+</li><li>
+Does <code>toString()</code> maintain Rep-invariant1?
+</li><li>
+Does <code>toString()</code> satisfy its contract?
+</li><li>
+Copy SlimStack.java to SlimStackRI1.java. Implement repOK() based on Rep-in=
+variant1.=20
+Fix the method(s) that violate Rep-invariant1 or their contract.=20
+Write JUnit tests that use  repOK() to test your fixes.
+</li>
+</ul>
+<br>
+
+<li>
+Considering Rep-invariant2:
+</li>
+<ul>
+<li>
+Does <code>push()</code> maintain Rep-invariant2?
+</li><li>
+Does <code>push()</code> satisfy its contract?
+</li><li>
+Does <code>pop()</code> maintain Rep-invariant2?
+</li><li>
+Does <code>pop()</code> satisfy its contract?
+</li><li>
+Does <code>toString()</code> maintain Rep-invariant2?
+</li><li>
+Does <code>toString()</code> satisfy its contract?
+</li><li>
+Copy SlimStack.java to SlimStackRI2.java. Implement repOK() based on Rep-in=
+variant2.=20
+Fix the method(s) that violate Rep-invariant2 or their contract.=20
+Write JUnit tests that use  repOK() to test your fixes.
+</li>
+</ul>
+
+<br>
+</ol>
+
+</font><iframe id=3D"g8Piqzw1" frameborder=3D"0" src=3D"cid:frame-E2DAF48B8=
+975C3E252AED5F789E86C74@mhtml.blink" style=3D"width: 0px; height: 0px; disp=
+lay: none;"></iframe></body></html>
+------MultipartBoundary--YbsF3lZ3cqoZ6ypivQACyHL37YzOc1lYM46sL6QCnG----
+Content-Type: text/html
+Content-ID: <frame-E2DAF48B8975C3E252AED5F789E86C74@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: chrome-extension://ekhagklcjbdpajgpjgmbionohlpdbjgc/translateSandbox/translateSandbox.html
+
+<!DOCTYPE html><!--
+    ***** BEGIN LICENSE BLOCK *****
+   =20
+    Copyright =C2=A9 2021 Center for History and New Media
+                     George Mason University, Fairfax, Virginia, USA
+                     http://zotero.org
+   =20
+    This file is part of Zotero.
+   =20
+    Zotero is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as publishe=
+d by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+   =20
+    Zotero is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+   =20
+    You should have received a copy of the GNU Affero General Public Licens=
+e
+    along with Zotero.  If not, see <http://www.gnu.org/licenses/>.
+   =20
+    ***** END LICENSE BLOCK *****
+--><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+=09
+	<title>Zotero - Translate Sandbox</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
+------MultipartBoundary--YbsF3lZ3cqoZ6ypivQACyHL37YzOc1lYM46sL6QCnG------

@@ -19,7 +19,6 @@ public class SlimStack {
    
    private Object[] elements;
    private int size = 0;
-
    
      
     // Note: AF is the specification for toString()
@@ -55,6 +54,9 @@ public class SlimStack {
    // Effects: Pushes e onto the top of this stack
    //		   i.e., this becomes this + [e]
    //          throws IllegalArgumentException if e is null
+   // Rep-invariant1: elements != null and 0 <= size <= elements.length
+   // 				 for any index i such that 0 <= i < size, elements[i] != null	
+   
    public void push (Object e) {
 	 if (e == null) throw new IllegalArgumentException();
      ensureCapacity();
@@ -76,6 +78,10 @@ public class SlimStack {
          elements = new Object[2*size + 1];
          System.arraycopy(oldElements, 0, elements, 0, size);
       }
+   }
+
+   public void repOk() {
+	
    }
 
    public static void main(String args[]) {
