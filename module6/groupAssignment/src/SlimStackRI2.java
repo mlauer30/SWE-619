@@ -1,5 +1,12 @@
 import java.util.*;
 
+// Participation Scores: 
+// Matthew Lauer - 100%
+// Sophia Nadasy - 100%
+// Dan Le - 100%
+// Sri Teja Kale - 100%
+// Sri Bhuvan Maddipudi - 0% 
+
 // Abstract Description:
 // A stack is a List that only allows insert/remove at right end.
 // SlimStack is stack that does not allow for identical elements to be adjacent to each other.
