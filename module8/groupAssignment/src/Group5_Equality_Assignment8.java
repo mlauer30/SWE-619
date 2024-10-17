@@ -20,7 +20,7 @@ import java.util.*;
  * If not, it returns false; if so, it iterates over both lists, comparing corresponding pairs of elements. If any comparison returns false, this method returns false. 
  * If either iterator runs out of elements before the other it returns false (as the lists are of unequal length); otherwise it returns true when the iterations complete.
  */
-public class Equality_Assignment7 {
+public class Group5_Equality_Assignment8 {
     public static void main(String args[]) {	
         Set<List<String>> s = new HashSet<List<String>>();     
             System.out.println(s);
