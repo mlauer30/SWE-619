@@ -68,6 +68,7 @@ public class Equality_Assignment7 {
     }
 }
 
+// Line by line explanation of code 
 // Output : 
 
 // [] \\s output 
@@ -106,25 +107,32 @@ public class Equality_Assignment7 {
  * s then adds the two lists, x and y, to its HashSet. We add an empty value x to s 
  * which places the unique empty value [] into the set, however when the empty value for y is added
  * no duplicates are allowed in the set so the set states remains the same.
+ * 
  * The program then creates a boolean variable, b, to check if the set, s, contains y,
  * which returns true when the two sets being compared have the equivalent size and elements.
+ * 
  * Then, the string "cat" is added to the List, y, and the contents of the Set s is checked 
  * and appears to continue to be empty, only containing [], demonstrating that the 
  * contents of the Set remains unchanged after altering its supposed contents of the List y.
+ * 
  * This is because what is actually in the set, is the List x. 
  * The boolean checking earlier if s contained y returned true only because x and y happened to be the same, they were both empty.
  * This is where the set mutability issue arises. When "cat" is added to y, the hash code and 
  * equality of y change. However, since the set s relies on the original state of y (before the modification), 
  * it has no way of knowing about the change.
+ * 
  * Another check is performed to see if s still contains y and returns false. 
  * This suggests that the List object, y, is not in the Set, even though when checked earlier, it returned true.
- * The addition of "cat" to the List y modified its refrence from the Set because we are not allowed to have 
- * duplicate values to a HashSet.
+ * The addition of "cat" to the List y modified its reference from the Set because we are not allowed to have 
+ * duplicate values in the HashSet.
+ * 
  * Then the modified List y is added back to the Set, now modifiying the Set's contents.
  * This updates the reference from the Set to the List y, because now when y is modified,
  * in this case by removing "cat", the Set is updated accordingly.
+ * 
  * Then, the empty List y is removed from the Set s, and the boolean b returns false when s checks for the reference to y. * 
  * Now that duplicate values have been introduced in the hash set, the place in memory that used to define x is no longer using the proper hash code, and is giving us an 
  * unexpected return where the value [] cannot be located even though we know that it is still in the set.
+ * 
  * Because x and y are mutable Lists, the Set should use defensive copying or containers because the set's behavior is not specifed for the use of mutable objects as set elements. 
  */
