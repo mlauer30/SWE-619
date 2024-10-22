@@ -14,12 +14,12 @@ public class Discussion1_IdentifyingIssues {
 
         // Identify any code that results in a compiler error or warning. Identify any code that raises a runtime exception. 
         // Once a compiler error is noted, you do not need to analyze the sequence further.
-        
+
         // Question #1
-        // Errors
-        // objects = new String[1];
-        // objects[0] = string;
-        // objects[0] = x;
+        // Runtime Error ArrayStoreException when doing objects[0] = x, objects array type is of String[], not Integer
+        objects = new String[1];
+        objects[0] = string;
+        objects[0] = x;
         
         // Question #2
         objects = new Object[1];
@@ -31,7 +31,7 @@ public class Discussion1_IdentifyingIssues {
         stringList.add(string);
 
         // Question #4
-        // Errors
+        // CompileTimeError - cannot convert from String ArrayList to List object. Generics does not allow you to cast object type
         // objectList = new ArrayList<String>();
         // objectList.add(string);
 
@@ -42,6 +42,9 @@ public class Discussion1_IdentifyingIssues {
         
         // Question #6
         // Needs Generics
+        
+        // No type is specified for the List, so the raw type will need to be treated like old java where values are casted to handle type safety.
+        // This will still run though.
         rawList = new ArrayList();
         rawList.add(string);
         rawList.add(x);
